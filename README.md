@@ -1,2 +1,11 @@
 # ghosts-of-data
 a ghost from data generator
+
+## dependencies
+* python 3.8.5
+* [pytorch 16](https://pytorch.org/get-started/locally/)
+* cuda 10.2
+* [transformers](https://github.com/huggingface/transformers)
+
+## research links
+* 
