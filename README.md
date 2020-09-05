@@ -11,9 +11,7 @@ a ghost from data generator
 * [hugging face transformers generate script](https://github.com/huggingface/transformers/blob/master/examples/text-generation/run_generation.py)
 * [scientific paper on natural language generation explaining temperature, top-k smapling and other parameters we encountered in the 
 transformers docu](https://arxiv.org/pdf/1904.09751.pdf)
-* [tokenization explained](https://www.analyticsvidhya.com/blog/2020/05/what-is-tokenization-nlp/#:~:text=Tokens%20are%20the%20building%20blocks,n%2Dgram%20characters)%20tokenization.)
 * [Zamia german GPT-2](http://zamia-speech.org/brain/)
 * [article train gpt 2 in your own language](https://towardsdatascience.com/train-gpt-2-in-your-own-language-fc6ad4d60171)
-* [article Fine-tuning the English GPT-2 in any language](https://medium.com/@pierre_guillou/faster-than-training-from-scratch-fine-tuning-the-english-gpt-2-in-any-language-with-hugging-f2ec05c98787
-)
+* [article Fine-tuning the English GPT-2 in any language](https://medium.com/@pierre_guillou/faster-than-training-from-scratch-fine-tuning-the-english-gpt-2-in-any-language-with-hugging-f2ec05c98787)
 
