@@ -8,4 +8,4 @@ a ghost from data generator
 * [transformers](https://github.com/huggingface/transformers)
 
 ## research links
-* https://github.com/huggingface/transformers/blob/master/examples/text-generation/run_generation.py
+* [hugging face transformers generate script](https://github.com/huggingface/transformers/blob/master/examples/text-generation/run_generation.py)
