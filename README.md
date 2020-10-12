@@ -3,11 +3,7 @@ a ghost from data generator
 
 ## research links
 * [hugging face transformers generate script](https://github.com/huggingface/transformers/blob/master/examples/text-generation/run_generation.py)
-<<<<<<< HEAD
 * [transformers pretrained models](https://huggingface.co/models?filter=gpt2)
-=======
-* [transformers pretrained models](http://repo.continuum.io/miniconda/)
->>>>>>> d252291d2c26ee60030035db2a3f749c8d4d31bb
 * [scientific paper on natural language generation explaining temperature, top-k smapling and other parameters we encountered in the
 transformers docu](https://arxiv.org/pdf/1904.09751.pdf)
 * [Zamia german GPT-2](http://zamia-speech.org/brain/)
