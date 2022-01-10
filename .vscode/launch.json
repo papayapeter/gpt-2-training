@@ -18,7 +18,7 @@
             "program": "create_dataset.py",
             "args": [
                 "${workspaceFolder}/dataset/raw_mails.txt",
-                "-n",
+                "-s",
                 "Hendrik",
                 "Zeno"
             ],
