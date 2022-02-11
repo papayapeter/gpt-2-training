@@ -61,7 +61,7 @@ def main() -> None:
         for submail in submails_by_teams[team]:
             file_string += submail + mail_seperator
         
-        with open(os.path.join('output', f'parsed_{team}'), 'w+') as file:
+        with open(os.path.join('output', f'parsed_{team}.txt'), 'w+') as file:
             file.write(file_string)
 
     print('parsed mails')
