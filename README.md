@@ -8,6 +8,7 @@ research for finetraining gpt-2 to generate monologues/dialogues about ghosts
 - [hugginface model database](https://huggingface.co/models)
 - [hugginface transformer docs](https://huggingface.co/transformers/)
 - [finetuning with aitextgen](https://github.com/minimaxir/aitextgen) [or](https://docs.aitextgen.io/)
+- [conda cheat sheet](https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf)
 
 ## info
 
@@ -17,11 +18,12 @@ research for finetraining gpt-2 to generate monologues/dialogues about ghosts
 
 ### conda
 - python 3.8.10
-- pytorch (with cuda 11.3)
-- (huggingface) transformers
-- pandas
 - yapf
-- beautiful soup
+- pandas
+- pytorch (with cuda 10.2)
+- tensorflow
+- (huggingface) transformers
+
 
 ### pip
 - aitextgen
