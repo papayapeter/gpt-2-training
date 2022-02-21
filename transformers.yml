@@ -91,15 +91,7 @@ dependencies:
   - pyasn1-modules=0.2.8=py_0
   - pycparser=2.20=py_2
   - pyjwt=1.7.1=py38_0
-  - pyopenssl=19.1.0=py_1
-  - pyparsing=3.0.4=pyhd3eb1b0_0
-  - pysocks=1.7.1=py38_0
-  - python=3.8.10=h12debd9_8
-  - python-dateutil=2.8.1=py_0
-  - python_abi=3.8=1_cp38
-  - pytorch=1.10.2=py3.8_cuda10.2_cudnn7.6.5_0
-  - pytorch-mutex=1.0=cuda
-  - pytz=2020.1=py_0
+  - pyopenssl=19.1.0=py_1enter
   - pyyaml=6.0=py38h7f8727e_1
   - readline=8.1.2=h7f8727e_1
   - regex=2021.11.2=py38h7f8727e_0
