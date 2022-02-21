@@ -18,6 +18,7 @@ research for finetraining gpt-2 to generate monologues/dialogues about ghosts
 
 ### conda
 - python 3.8.10
+- ipykernel
 - yapf
 - pandas
 - pytorch (with cuda 10.2)
@@ -27,3 +28,7 @@ research for finetraining gpt-2 to generate monologues/dialogues about ghosts
 
 ### pip
 - aitextgen
+
+### setup
+
+1. to create the envorinment: `conda env create -f transformers.yml`
