@@ -11,18 +11,5 @@
             "program": "${file}",
             "console": "integratedTerminal"
         },
-        {
-            "name": "extraction test",
-            "type": "python",
-            "request": "launch",
-            "program": "create_dataset.py",
-            "args": [
-                "${workspaceFolder}/dataset/raw_mails.txt",
-                "-s",
-                "Hendrik",
-                "Zeno"
-            ],
-            "console": "integratedTerminal"
-        },
     ]
 }

@@ -1,7 +1,11 @@
 import os
 
-files = [os.path.join('parsed', 'parsed_0.txt'), os.path.join('parsed', 'parsed_1.txt')]
+files = [
+    os.path.join('parsed', 'parsed_0.txt'),
+    os.path.join('parsed', 'parsed_1.txt')
+    ]
 mail_seperator = '\n\n\n'
+
 
 def main() -> None:
     # get all mails from seperate files and put them in a dict of lists
@@ -9,8 +13,10 @@ def main() -> None:
     for path in mails_by_files:
         with open(path) as file:
             file_string = file.read()
-        
-        mails_by_files[path] = [mail for mail in file_string.split(mail_seperator) if mail]
+
+        mails_by_files[path] = [
+            mail for mail in file_string.split(mail_seperator) if mail
+            ]
 
     # get length of longest mail list
     mails = []
@@ -34,6 +40,7 @@ def main() -> None:
     # write that string to a file
     with open(os.path.join('parsed', f'parsed.txt'), 'w+') as file:
         file.write(file_string)
+
 
 if __name__ == '__main__':
     main()
