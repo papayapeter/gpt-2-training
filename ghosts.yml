@@ -1,4 +1,4 @@
-name: transformers
+name: ghosts
 channels:
   - huggingface
   - pytorch
@@ -159,13 +159,12 @@ dependencies:
   - zlib=1.2.11
   - zstd=1.4.9
   - pip:
-    - aitextgen==0.5.2
-    - fire==0.4.0
-    - fsspec==2022.2.0
-    - future==0.18.2
-    - pydeprecate==0.3.1
-    - pytorch-lightning==1.5.10
-    - setuptools==59.5.0
-    - torchmetrics==0.7.2
-    - yarl==1.5.1
-prefix: /home/bird/miniconda3/envs/transformers
+      - aitextgen==0.5.2
+      - fire==0.4.0
+      - fsspec==2022.2.0
+      - future==0.18.2
+      - pydeprecate==0.3.1
+      - pytorch-lightning==1.5.10
+      - setuptools==59.5.0
+      - torchmetrics==0.7.2
+      - yarl==1.5.1
