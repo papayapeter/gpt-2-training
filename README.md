@@ -1,7 +1,7 @@
 # ghosts-of-data
 
-for finetuning gpt-2 to generate conversations about ai, cybernetics, control and ghosts
-additionaly for finetuning stylegan (1 or 2) to create image interpolations of the conversation partners
+for dataset parsing, dataset preperation & finetuning gpt-2 to generate conversations about ai, cybernetics, control and ghosts
+additionaly parsing, dataset preperation & interpolation generation with stylegan2 to create videos of the conversation partners
 
 ## global resources
 
@@ -27,7 +27,7 @@ additionaly for finetuning stylegan (1 or 2) to create image interpolations of t
 
 #### conda
 
-- python 3.8.10: `conda create --name transformers python=3.8.10`
+- python 3.8: `conda create --name transformers python=3.8`
 - ipykernel/yapf/pandas: `conda install ipykernel yapf pandas`
 - pytorch (with cuda 11.3): `conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch`
 - tensorflow: `conda install tensorflow `
@@ -43,7 +43,37 @@ additionaly for finetuning stylegan (1 or 2) to create image interpolations of t
 2. activate the enviroment: `conda activate transformers`
 3. changes to the environment can be saved with: `conda env export --no-builds | grep -v "prefix" > transformers.yml` this should be used with caution though. after pip packages have been installed, no packages should be installed through conda anymore.
 
-# stylegan portrait interpolations
+# stylegan2-pytorch portrait interpolations
+
+### directions
+
+1. install [cuda toolkit host](https://developer.nvidia.com/cuda-toolkit), [ninja](https://ninja-build.org/) & check if GCC >= 7.x
+2. fork stylegan and clone with `git clone https://github.com/NVlabs/stylegan2-ada-pytorch`
+3. parse videos with `parse-images.py`
+4. train the model with `python train.py --outdir=~/training-runs --data=~/datasets/dataset.zip --gpus=1 --cfg=paper1024 --mirror=1 --resume=ffhq1024 --snap=10`
+
+## research links
+
+- [stylegan2-ada-pytorch repo](https://github.com/NVlabs/stylegan2-ada-pytorch)
+- [stylegan fork by Derrick Schultz](https://github.com/dvschultz/stylegan2-ada-pytorch) (might be a good inspiration for interpolations)
+- **[stylegan3](https://github.com/NVlabs/stylegan3) (possibly better/easier interpolations and easier install thanks to conda env yml. also more contemporary pytorch version and very good docs)**
+- [extract frames from video with opencv](https://medium.com/@iKhushPatel/convert-video-to-images-images-to-video-using-opencv-python-db27a128a481)
+- [crop to face with opencv](https://www.geeksforgeeks.org/cropping-faces-from-images-using-opencv-python/)
+
+## used packages
+
+#### conda
+
+- python 3.7: `conda create --name stylegan python=3.7`
+- pytorch 1.7 (with cuda 11.3): `conda install pytorch==1.7.1 torchvision==0.8.2 torchaudio==0.7.2 cudatoolkit=11.3 -c pytorch`
+- yapf/requests/numpy/tqdm/ninja: `conda install yapf requests numpy tqdm ninja`
+- imageio-ffmpeg: `conda install -c conda-forge imageio-ffmpeg==0.4.3`
+
+#### pip
+
+- pyspng: `pip3 install pyspng`
+
+# stylegan portrait interpolations _(obsolete)_
 
 ### directions
 
@@ -65,13 +95,8 @@ additionaly for finetuning stylegan (1 or 2) to create image interpolations of t
 
 #### conda
 
-- python 3.8.10: `conda create --name stylegan python=3.8.10`
-- yapf: `conda install yapf`
+- python 3.7: `conda create --name stylegan python=3.7`
 - tensorflow-gpu: `conda install tensorflow-gpu==1.13.1 cudatoolkit=10.2`
 - tensorboard: `conda install tensorboard`
-- pillow/numpy/scipy/opencv/lmdb: `conda install pillow scipy opencv lmdb`
-- moviepy: `conda install -c conda-forge moviepy `
-
-#### pip
-
-- aitextgen: `pip3 install aitextgen`
+- yapf/pillow/numpy/scipy/opencv/lmdb: `conda install yapf pillow numpy scipy opencv lmdb`
+- moviepy: `conda install -c conda-forge moviepy`
