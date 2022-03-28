@@ -57,6 +57,7 @@ additionaly parsing, dataset preperation & interpolation generation with stylega
 - [stylegan2-ada-pytorch repo](https://github.com/NVlabs/stylegan2-ada-pytorch)
 - [stylegan fork by Derrick Schultz](https://github.com/dvschultz/stylegan2-ada-pytorch) (might be a good inspiration for interpolations)
 - **[stylegan3](https://github.com/NVlabs/stylegan3) (possibly better/easier interpolations and easier install thanks to conda env yml. also more contemporary pytorch version and very good docs)**
+- [traversing the latent space](https://amarsaini.github.io/Epoching-Blog/jupyter/2020/08/10/Latent-Space-Exploration-with-StyleGAN2.html)
 - [extract frames from video with opencv](https://medium.com/@iKhushPatel/convert-video-to-images-images-to-video-using-opencv-python-db27a128a481)
 - [crop to face with opencv](https://www.geeksforgeeks.org/cropping-faces-from-images-using-opencv-python/)
 
