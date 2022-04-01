@@ -152,10 +152,10 @@ cython_debug/
 #.idea/
 
 # private directories
-*/dataset/*
-*/parsed/*
+dataset/*
+parsed/*
 
 # large directories
-*/models/*
-*/aitextgen/
-*/trained_model/
+models/*
+aitextgen/
+trained_model/
