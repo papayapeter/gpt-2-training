@@ -1,7 +1,6 @@
-# ghosts-of-data
+# gpt-2-training
 
 for dataset parsing, dataset preperation & finetuning gpt-2 to generate conversations about ai, cybernetics, control and ghosts
-additionaly parsing, dataset preperation & interpolation generation with stylegan2 to create videos of the conversation partners
 
 ## global resources
 
