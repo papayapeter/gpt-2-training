@@ -41,4 +41,4 @@ additionaly parsing, dataset preperation & interpolation generation with stylega
 
 1. to create the envorinment: `conda env create -f environment.yml`
 2. activate the enviroment: `conda activate transformers`
-3. changes to the environment can be saved with: `conda env export --no-builds | grep -v "prefix" > environment.yml` this should be used with caution though. after pip packages have been installed, no packages should be installed through conda anymore.
+3. changes to the environment can be saved with: `conda env export --no-builds | grep -v "prefix" > environment.yml`
