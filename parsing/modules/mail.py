@@ -1,16 +1,22 @@
-from typing import List
-
 import re
 from email import utils
 from email import policy
 from email.parser import BytesParser
 from datetime import datetime
 
+
 class Mail:
     """
     Mail object with body, from, to and date properties.
     """
-    def __init__(self, body: str = None, sender: str = None, receiver: str = None, date: datetime = None) -> None:
+
+    def __init__(
+            self,
+            body: str = None,
+            sender: str = None,
+            receiver: str = None,
+            date: datetime = None
+        ) -> None:
         self._body = body
         self._sender = sender
         self._receiver = receiver
@@ -28,6 +34,7 @@ class Mail:
     def get_date(self) -> datetime:
         return self._date
 
+
 def from_eml(path_to_eml: str) -> Mail:
     """
     Loads a mail from an eml file and returns it as a Mail instance.
@@ -41,7 +48,7 @@ def from_eml(path_to_eml: str) -> Mail:
     # remove non breaking spaces
     text = text.replace(u'\xa0', u' ')
     # remove single newlines
-    text = re.sub(r'([^\n])\n([^\n])',  r'\1 \2', text)
+    text = re.sub(r'([^\n])\n([^\n])', r'\1 \2', text)
 
     # split text into paragraphs
     lines = []
@@ -54,6 +61,9 @@ def from_eml(path_to_eml: str) -> Mail:
                 lines.append(raw_lines[index + 1])
             break
 
-    return Mail(body='\n'.join(lines), sender=message.get('From'), receiver=message.get('To'), date=utils.parsedate_to_datetime(message.get('Date')))
-
-        
+    return Mail(
+        body='\n'.join(lines),
+        sender=message.get('From'),
+        receiver=message.get('To'),
+        date=utils.parsedate_to_datetime(message.get('Date'))
+        )
