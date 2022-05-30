@@ -11,5 +11,16 @@
             "program": "${file}",
             "console": "integratedTerminal"
         },
+        {
+            "name": "parse for training",
+            "type": "python",
+            "request": "launch",
+            "program": "parse-for-training.py",
+            "args": [
+                "chat_data_edited.json",
+                "for_training.txt"
+            ],
+            "console": "integratedTerminal"
+        },
     ]
 }

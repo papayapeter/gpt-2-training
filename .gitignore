@@ -159,3 +159,4 @@ parsed/*
 models/*
 aitextgen/
 trained_model/
+for_training.txt

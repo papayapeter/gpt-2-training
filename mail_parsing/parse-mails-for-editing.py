@@ -28,7 +28,7 @@ def main() -> None:
         mail['body'] = re.split(r'(?<=[.?!;])', mail['body'])
 
     # print split mails to file
-    with open(os.path.join('dataset', 'for_editing.txt'), 'w') as file:
+    with open(os.path.join('dataset', 'for_pasting.txt'), 'w') as file:
         for mail in mail_dict:
             file.write(
                 f'''---\nsender: {mail["sender"]}\ndatetime: {mail["datetime"].strftime("%d.%m.%Y, %H:%M:%S")}\n\n'''
