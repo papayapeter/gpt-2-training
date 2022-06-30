@@ -1,5 +1,7 @@
 # gpt-2-training
 
+note: this is an obsolete branch including features that are not needed in the current process.
+
 for dataset parsing, dataset preperation & finetuning gpt-2 to generate conversations about ai, cybernetics, control and ghosts
 
 ## global resources
