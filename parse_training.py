@@ -39,7 +39,9 @@ def parse(
     elif os.path.splitext(in_file)[1] == '.txt':
         # read textfile
         with open(in_file) as file:
-            in_lines = file.readlines()
+            in_lines = [
+                line for line in file.readlines() if line
+                ]  # discard empty lines
 
         messages = [{
             'role': line.split('>', 1)[0].strip(),
