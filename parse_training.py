@@ -1,4 +1,4 @@
-from typing import List, Optional
+from typing import List, Optional, Union
 import os
 import json
 import click
@@ -9,7 +9,10 @@ def error(s: str) -> None:
     raise SystemExit
 
 
-def parse_roles(s: str) -> List[str]:
+def parse_roles(s: Union[List, str]) -> List[str]:
+    if isinstance(s, list):
+        return s
+
     return [role.strip() for role in s.split(',')]
 
 
