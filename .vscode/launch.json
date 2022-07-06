@@ -17,9 +17,9 @@
             "request": "launch",
             "program": "parse_training.py",
             "args": [
-                "dataset/performers_for_editing_01.txt",
+                "dataset/combined_for_editing_02.txt",
                 "for_training.txt",
-                "--format=[{ROLE}:] {text}",
+                "--format=[{role}] {text}",
                 "--roles=artist,scientist"
             ],
             "console": "integratedTerminal"

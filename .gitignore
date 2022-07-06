@@ -158,5 +158,5 @@ parsed/*
 # large directories
 models/*
 aitextgen/
-trained_model/
+trained_model*/
 for_training.txt
