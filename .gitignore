@@ -160,3 +160,4 @@ models/*
 aitextgen/
 trained_model*/
 for_training.txt
+chat_data*.json
