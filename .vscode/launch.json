@@ -17,7 +17,7 @@
             "request": "launch",
             "program": "parse_training.py",
             "args": [
-                "dataset/combined_for_editing_02.txt",
+                "dataset/combined_for_editing_03.txt",
                 "for_training.txt",
                 "--format=[{role}] {text}",
                 "--roles=artist,scientist"

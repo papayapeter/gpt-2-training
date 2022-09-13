@@ -1,0 +1,40 @@
+- filename: trained_model_00
+  date: 2022-08-??
+  iterations: "??"
+  info:
+  temp: 0.7
+- filename: trained_model_01
+  date: 2022-09-13
+  iterations: 500
+  info:
+  temp: 0.7
+- filename: trained_model_02
+  date: 2022-09-13
+  iterations: 800
+  info:
+  temp: 0.7
+- filename: trained_model_03_0600
+  date: 2022-09-13
+  iterations: 600
+  info:
+  temp: 0.7
+- filename: trained_model_03_0700
+  date: 2022-09-13
+  iterations: 700
+  info:
+  temp: 0.7
+- filename: trained_model_03_0900
+  date: 2022-09-13
+  iterations: 900
+  info:
+  temp: 0.7
+- filename: trained_model_03_1000
+  date: 2022-09-13
+  iterations: 1000
+  info:
+  temp: 0.7
+- filename: trained_model_04
+  date: 2022-09-13
+  iterations: 2000
+  info:
+  temp: 0.7
